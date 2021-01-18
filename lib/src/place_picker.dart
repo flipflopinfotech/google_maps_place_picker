@@ -217,7 +217,7 @@ class _PlacePickerState extends State<PlacePicker> {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             provider = snapshot.data;
-
+            print('has snapshot data');
             return ChangeNotifierProvider.value(
               value: provider,
               child: Builder(
