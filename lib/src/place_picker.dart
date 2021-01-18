@@ -225,15 +225,15 @@ class _PlacePickerState extends State<PlacePicker> {
                   return Scaffold(
                     resizeToAvoidBottomInset: widget.resizeToAvoidBottomInset,
                     extendBodyBehindAppBar: true,
-                    // appBar: AppBar(
-                    //   key: appBarKey,
-                    //   automaticallyImplyLeading: false,
-                    //   iconTheme: Theme.of(context).iconTheme,
-                    //   elevation: 0,
-                    //   backgroundColor: Colors.transparent,
-                    //   titleSpacing: 0.0,
-                    //   title: _buildSearchBar(),
-                    // ),
+                    appBar: AppBar(
+                      key: appBarKey,
+                      automaticallyImplyLeading: false,
+                      iconTheme: Theme.of(context).iconTheme,
+                      elevation: 0,
+                      backgroundColor: Colors.transparent,
+                      titleSpacing: 0.0,
+                      // title: _buildSearchBar(),
+                    ),
                     body: _buildMapWithLocation(),
                   );
                 },
